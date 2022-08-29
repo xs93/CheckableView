@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CheckableConstraintLayout">
+        <attr name="android:checked" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckableImageView">
+        <attr name="android:checked" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckGroup">
+        <attr name="ids" format="string" />
+        <attr name="checkedId" format="reference" />
+    </declare-styleable>
+</resources>
