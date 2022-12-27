@@ -6,17 +6,25 @@ import com.github.xs93.checkableview.simple.databinding.ActivityMainBinding
 import com.github.xs93.core.base.ui.viewbinding.BaseVbActivity
 import com.github.xs93.core.utils.toast.ToastUtils
 
-class MainActivity : BaseVbActivity<ActivityMainBinding>() {
+class MainActivity : BaseVbActivity<ActivityMainBinding>(R.layout.activity_main) {
     override fun initView(savedInstanceState: Bundle?) {
         ToastUtils.init(this)
-        mBinding.checkGroup.setOnCheckedChangeListener(object : CheckGroup.OnCheckedChangeListener {
+        binding.checkGroup.setOnCheckedChangeListener(object : CheckGroup.OnCheckedChangeListener {
             override fun onCheckedChanged(checkGroup: CheckGroup, checkId: Int) {
                 ToastUtils.show(checkId.toString())
             }
         })
 
-        mBinding.button.setOnClickListener {
+        binding.checkableFrameLayout.setOnClickListener {
+            binding.checkableFrameLayout.toggle()
+        }
 
+        binding.checkableConstraintLayout.setOnClickListener {
+            binding.checkableConstraintLayout.toggle()
+        }
+
+        binding.checkableLinearLayout.setOnClickListener {
+            binding.checkableLinearLayout.toggle()
         }
     }
 }

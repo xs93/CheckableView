@@ -8,6 +8,14 @@
         <attr name="android:checked" format="boolean" />
     </declare-styleable>
 
+    <declare-styleable name="CheckableFrameLayout">
+        <attr name="android:checked" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckableLinearLayout">
+        <attr name="android:checked" format="boolean" />
+    </declare-styleable>
+
     <declare-styleable name="CheckGroup">
         <attr name="ids" format="string" />
         <attr name="checkedId" format="reference" />
