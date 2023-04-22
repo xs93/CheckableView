@@ -3,7 +3,7 @@ package com.github.xs93.checkableview
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.Checkable
-import androidx.appcompat.widget.AppCompatImageView
+import com.google.android.material.imageview.ShapeableImageView
 
 /**
  *
@@ -14,7 +14,7 @@ import androidx.appcompat.widget.AppCompatImageView
  * @email 466911254@qq.com
  */
 @Suppress("unused")
-class CheckableImageView : AppCompatImageView, Checkable {
+class CheckableImageView : ShapeableImageView, Checkable {
 
     companion object {
         private val ATTR_CHECKED_STATE = intArrayOf(android.R.attr.state_checked)
